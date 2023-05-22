@@ -1,5 +1,12 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+
+    var userName: String = "Lex"
+    userName = "????"
+    // userName = 5 // err
+    var age: Int = 1_000
+
+
+    println("Hello, $userName ! your age is $age.")
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
