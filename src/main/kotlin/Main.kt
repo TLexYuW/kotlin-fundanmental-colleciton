@@ -3,9 +3,7 @@ fun main(args: Array<String>) {
     var userName: String = "Lex"
     userName = "????"
     // userName = 5 // err
-    var age: Int = 1_000
-
-
+    val age: Int = 1_000
     println("Hello, $userName ! your age is $age.")
 
     // Try adding program arguments via Run/Debug configuration.
