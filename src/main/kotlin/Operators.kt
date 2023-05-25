@@ -6,4 +6,24 @@ fun main() {
     println("x * y = ${x * y}")
     println("x / y = ${x / y}")
     println("x % y = ${x % y}")
+
+    var result = x + y
+
+    result += 2
+    println("result = $result")
+    result -= 2
+    println("result = $result")
+    result *= 2
+    println("result = $result")
+    result /= 2
+    println("result = $result")
+    result %= 2
+    println("result = $result")
+
+    x = 1
+    println("x = ${x++}")
+    println("x = ${++x}")
+    println("x = ${x--}")
+    println("x = ${--x}")
+
 }
