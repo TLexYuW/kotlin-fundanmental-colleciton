@@ -3,12 +3,12 @@
  * @date : 25/05/2023
  */
 fun main() {
-    val num = 99999
+    val num = 36
     val str = "String"
 
     val text = when (num) {
-        12, 24, 36 -> println("The number is $num")
-        in 1000 .. 10000 -> println("In the range 1000..10000")
+        12, 24, 36 -> "The number is $num"
+        in 1000 .. 10000 -> "In the range 1000..10000"
         10 -> println("The number is $num")
         5 -> println("The number is $num")
         99 -> println("The number is $num")

@@ -3,6 +3,7 @@
  * @date : 25/05/2023
  */
 fun main() {
+    // Nullable Type
     val str: String? = null
     println("str = $str")
 
