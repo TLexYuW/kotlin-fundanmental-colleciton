@@ -1,3 +1,5 @@
+package _02
+
 fun main() {
     // Integer, Short, Long, Float, Double
     var number: Int = 22

@@ -1,3 +1,5 @@
+package _04
+
 import java.util.Scanner
 
 /**

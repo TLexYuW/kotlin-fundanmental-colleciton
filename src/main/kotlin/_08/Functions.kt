@@ -1,3 +1,5 @@
+package _08
+
 /**
  * @author : Lex Yu
  * @date : 25/05/2023
@@ -19,6 +21,7 @@ fun main(args: Array<String>) {
     sendMsg("K")
     sendMsg(message = "This is msg")
 
+    println(sum(5, 10, 15, 20))
 }
 
 fun getData(data: String) {
@@ -52,7 +55,17 @@ fun sendMsg(name: String = "User", message: String = sendText()) {
 
 fun sendText(): String = "Some Text!"
 
-fun sum(number:Int){
+/*
+fun sum(a: Int, b: Int, c: Int, d: Int): Int {
+    return a + b + c + d
+}
+ */
 
+fun sum(vararg numbers: Int): Int {
+    var result = 0
+    for (number in numbers) {
+        result += number
+    }
+    return result
 }
 
