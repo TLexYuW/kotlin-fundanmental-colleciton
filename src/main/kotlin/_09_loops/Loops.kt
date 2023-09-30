@@ -54,4 +54,42 @@ fun main(args: Array<String>) {
         }
         println(i)
     }
+
+    println("-----------------------------------------------------------")
+
+    for (i in 0..10) {
+        if (i == 7) {
+            break
+        }
+        println(i)
+    }
+
+    println("-----------------------------------------------------------")
+
+    var n = 0
+    while (n < 5){
+        n++
+        println(n)
+        var q = 0
+        while (q < 5){
+            if (q == 2) break
+            q++
+            println("***$q")
+        }
+    }
+
+    println("-----------------------------------------------------------")
+
+    var o = 0
+    outer@ while (o < 5){
+        o++
+        println(o)
+
+        var q = 0
+        while (q < 5){
+            if (q == 0) break@outer
+            q++
+            println("***$q")
+        }
+    }
 }
