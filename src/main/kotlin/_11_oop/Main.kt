@@ -15,6 +15,13 @@ fun main(args: Array<String>) {
     car1.stop()
 
     val car2 = Car2();
+    car2.name = "Test"
+    car2.model = "None"
+    car2.color = "White"
+    car2.doors = 4
+    println(car2.toString())
+
+    val user = User()
 }
 
 class Car {
@@ -36,23 +43,15 @@ class Car {
     }
 }
 
-class Car2(name: String = "", model: String = "", color: String = "", door: Int = 0) {
+class User(name: String, var lastName: String, var age: Int) {
+    var name: String
 
-    var name = ""
-    var model = ""
-    var color = ""
-    var doors = 0
-
-    fun move() {
-        println("The car $name is moving")
+    init {
+        if (name.lowercase().startsWith("a")) {
+            this.name = name
+        } else {
+            this.name = "Default User Name"
+            println("The name doesn't start with the letter 'a' or 'A'")
+        }
     }
-
-    fun stop() {
-        println("The car $name has stopped")
-    }
-
-    override fun toString(): String {
-        return "Car(name='$name', model='$model', color='$color', doors=$doors)"
-    }
-
 }
