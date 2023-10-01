@@ -1,4 +1,4 @@
-package _02
+package _02_data_types
 
 fun main() {
     // Integer, Short, Long, Float, Double

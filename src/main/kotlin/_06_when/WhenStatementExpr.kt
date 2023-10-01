@@ -1,4 +1,4 @@
-package _06
+package _06_when
 
 /**
  * @author : Lex Yu

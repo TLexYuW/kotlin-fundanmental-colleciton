@@ -1,4 +1,4 @@
-package _04
+package _04_if_else
 
 import java.util.Scanner
 

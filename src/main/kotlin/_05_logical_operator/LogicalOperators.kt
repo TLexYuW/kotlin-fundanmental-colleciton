@@ -1,4 +1,4 @@
-package _05
+package _05_logical_operator
 
 /**
  * @author : Lex Yu

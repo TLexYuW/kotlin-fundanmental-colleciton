@@ -1,4 +1,4 @@
-package _08
+package _08_fun
 
 /**
  * @author : Lex Yu

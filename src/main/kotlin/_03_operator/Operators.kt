@@ -1,4 +1,4 @@
-package _03
+package _03_operator
 
 fun main() {
     var x = 10
