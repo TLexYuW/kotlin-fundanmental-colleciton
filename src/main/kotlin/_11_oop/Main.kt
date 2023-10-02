@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
     car2.doors = 4
     println(car2.toString())
 
-    val user = User()
+//    val user = User()
 }
 
 class Car {
