@@ -3,12 +3,9 @@ package _11_oop
 /**
  * @author : Lex Yu
  */
-class Car2(name: String = "", model: String = "", color: String = "", door: Int = 0) {
+class Car2(name: String, var model: String, var color: String, var doors: Int) {
 
-    var name = ""
-    var model = ""
-    var color = ""
-    var doors = 0
+    var name = name.trim()
 
     fun move() {
         println("The car $name is moving")

@@ -14,14 +14,11 @@ fun main(args: Array<String>) {
     car1.move()
     car1.stop()
 
-    val car2 = Car2();
-    car2.name = "Test"
-    car2.model = "None"
-    car2.color = "White"
-    car2.doors = 4
+    val car2 = Car2("Test",  "None", "White", 4);
     println(car2.toString())
 
-//    val user = User()
+    val user = User("Blex","Test",111)
+    println(user.toString())
 }
 
 class Car {
@@ -54,4 +51,9 @@ class User(name: String, var lastName: String, var age: Int) {
             println("The name doesn't start with the letter 'a' or 'A'")
         }
     }
+
+    override fun toString(): String {
+        return "User(lastName='$lastName', age=$age, name='$name')"
+    }
+
 }
