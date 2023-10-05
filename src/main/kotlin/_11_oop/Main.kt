@@ -14,11 +14,21 @@ fun main(args: Array<String>) {
     car1.move()
     car1.stop()
 
-    val car2 = Car2("Test",  "None", "White", 4);
+    val car2 = Car2("Test", "None", "White", 4);
     println(car2.toString())
 
-    val user = User("Blex","Test",111)
+    val user = User("Blex", "Test", 111)
     println(user.toString())
+
+    val u2 = User2("LL")
+    println(u2.toString())
+
+    val u3 = User2("NNN", "LLL")
+    println(u3.toString())
+
+    val u4 = User2()
+    println(u4.toString())
+
 }
 
 class Car {
@@ -52,8 +62,31 @@ class User(name: String, var lastName: String, var age: Int) {
         }
     }
 
+    init {
+
+    }
+
     override fun toString(): String {
         return "User(lastName='$lastName', age=$age, name='$name')"
     }
 
+}
+
+class User2(var name: String, var lastName: String, var age: Int) {
+    constructor(name: String) : this(name, "2ndLastName", 2) {
+        println("2nd")
+    }
+
+    constructor(name: String, lastName: String) : this(name = "3rdName", lastName = "3rdLastName", age = 3) {
+        println("3rd")
+    }
+
+    constructor() : this(name = "", lastName = "", age = 0) {
+        println("4rd")
+    }
+
+
+    override fun toString(): String {
+        return "User2(lastName='$lastName', age=$age)"
+    }
 }
