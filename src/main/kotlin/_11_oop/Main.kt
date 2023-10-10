@@ -17,8 +17,15 @@ fun main(args: Array<String>) {
     val car2 = Car2("Test", "None", "White", 4);
     println(car2.toString())
 
-    val user = User("Blex", "Test", 111)
+    val u1 = User("Alex", "TestLastName", 1000)
+    println(u1.toString())
+
+    val user = User("BBBBB", "Test", 111)
     println(user.toString())
+
+
+    val u2t = User2("Alex", "TestLastName", 1000)
+    println(u2t.toString())
 
     val u2 = User2("LL")
     println(u2.toString())
@@ -28,6 +35,11 @@ fun main(args: Array<String>) {
 
     val u4 = User2()
     println(u4.toString())
+
+    val u3t = User3("Alex", "TestLastName", 1000)
+    println(u3t.firstname)
+    println(u3t.toString())
+
 
 }
 
@@ -73,6 +85,7 @@ class User(name: String, var lastName: String, var age: Int) {
 }
 
 class User2(var name: String, var lastName: String, var age: Int) {
+
     constructor(name: String) : this(name, "2ndLastName", 2) {
         println("2nd")
     }
@@ -85,8 +98,24 @@ class User2(var name: String, var lastName: String, var age: Int) {
         println("4rd")
     }
 
+    override fun toString(): String {
+        return "User2(name='$name', lastName='$lastName', age=$age)"
+    }
+
+}
+
+class User3(firstname: String, var lastName: String, var age: Int) {
+    var firstname = firstname
+        get() {
+            return "First: $field"
+        }
+        set(value) {
+            println("$value was assigned to firstname property")
+            field = value
+    }
 
     override fun toString(): String {
-        return "User2(lastName='$lastName', age=$age)"
+        return "User3(lastName='$lastName', age=$age)"
     }
+
 }
