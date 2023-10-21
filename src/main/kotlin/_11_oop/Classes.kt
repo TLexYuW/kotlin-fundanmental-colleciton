@@ -20,3 +20,7 @@ class Car2(name: String, var model: String, var color: String, var doors: Int) {
     }
 
 }
+
+class Staff(var firstname: String, var lastname: String, var age: Int) {
+
+}
