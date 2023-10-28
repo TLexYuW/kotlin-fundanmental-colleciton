@@ -18,9 +18,11 @@ class Car2(name: String, var model: String, var color: String, var doors: Int) {
     override fun toString(): String {
         return "Car(name='$name', model='$model', color='$color', doors=$doors)"
     }
-
 }
 
 class Staff(var firstname: String, var lastname: String, var age: Int) {
-
+    lateinit var movie: String
+    override fun toString(): String {
+        return "Staff(firstname='$firstname', lastname='$lastname', age=$age, movie='$movie')"
+    }
 }

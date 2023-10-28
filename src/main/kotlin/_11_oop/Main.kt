@@ -40,6 +40,10 @@ fun main(args: Array<String>) {
     println(u3t.firstname)
     println(u3t.toString())
 
+    val staff1 = Staff("first", "last", 12222)
+//    println(staff1.movie) // err
+    staff1.movie = "Movie??"
+    println(staff1)
 
 }
 
@@ -112,7 +116,7 @@ class User3(firstname: String, var lastName: String, var age: Int) {
         set(value) {
             println("$value was assigned to firstname property")
             field = value
-    }
+        }
 
     override fun toString(): String {
         return "User3(lastName='$lastName', age=$age)"
