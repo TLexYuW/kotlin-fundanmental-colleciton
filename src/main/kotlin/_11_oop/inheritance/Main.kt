@@ -11,6 +11,18 @@ fun main() {
 
     plane.move()
     plane.stop()
+
+    println("=============================================================================================>")
+
+    val view = View()
+    val button = Button("Login", "Center")
+    val roundButton = RoundButton("Sing Up", "Center", 30)
+
+    view.draw()
+    println("=============================================================================================>")
+    button.draw()
+    println("=============================================================================================>")
+    roundButton.draw()
 }
 
 open class Vehicle(val name: String, val color: String) {
@@ -30,6 +42,7 @@ class Car(name: String, color: String, val engines: Int, val doors: Int) : Vehic
 class Plane(name: String, color: String, val engines: Int, val doors: Int) : Vehicle(name, color) {
     override fun move() {
         flying()
+        super.move()
     }
 
     override fun stop() {
@@ -41,8 +54,25 @@ class Plane(name: String, color: String, val engines: Int, val doors: Int) : Veh
     }
 }
 
-class View() {
-    fun draw(){
+open class View() {
+
+    open fun draw() {
         println("Drawing a view.")
     }
 }
+
+open class Button(val text: String, val orientation: String) : View() {
+
+    override fun draw() {
+        println("Drawing the button")
+        super.draw()
+    }
+}
+
+class RoundButton(text: String, orientation: String, val corners: Int) : Button(text, orientation) {
+    override fun draw() {
+        println("Drawing the round button.")
+        super.draw()
+    }
+}
+
