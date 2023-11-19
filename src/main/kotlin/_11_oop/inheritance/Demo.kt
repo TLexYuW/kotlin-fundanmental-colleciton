@@ -1,7 +1,5 @@
 package _11_oop.inheritance
 
-import _11_oop.Car
-
 fun main() {
     val car = Car("BMW", "RED", 1, 4)
     val plane = Plane("Boeing", "White", 4, 4)

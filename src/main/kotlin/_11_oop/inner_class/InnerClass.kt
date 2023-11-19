@@ -1,4 +1,4 @@
-package _11_oop
+package _11_oop.inner_class
 
 fun main() {
     val listView = ListView(arrayOf("Name 1", "Name 2", "Name 3", "Name 4"))

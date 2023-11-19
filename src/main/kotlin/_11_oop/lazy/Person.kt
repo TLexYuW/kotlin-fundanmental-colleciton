@@ -1,4 +1,4 @@
-package _11_oop
+package _11_oop.lazy
 
 fun main(args: Array<String>) {
     val p1 = Person("Alex", "EEEErrrrr", 2222)

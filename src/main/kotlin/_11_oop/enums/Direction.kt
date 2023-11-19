@@ -1,4 +1,4 @@
-package _11_oop
+package _11_oop.enums
 
 fun main() {
 

@@ -1,4 +1,4 @@
-package _11_oop
+package _11_oop.companion_object.demo2
 
 fun main() {
 //    val cal = Calculator()

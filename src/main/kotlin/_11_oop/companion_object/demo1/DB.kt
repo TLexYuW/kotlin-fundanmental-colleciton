@@ -1,4 +1,4 @@
-package _11_oop
+package _11_oop.companion_object.demo1
 
 fun main() {
     println(DB)
