@@ -27,7 +27,7 @@ kotlin {
 }
 
 application {
-    mainClass.set("Main2Kt")
+    mainClass.set("MainKt")
 }
 
 tasks.jar {
