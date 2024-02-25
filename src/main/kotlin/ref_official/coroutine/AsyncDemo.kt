@@ -5,12 +5,16 @@ package coroutine
  */
 import kotlinx.coroutines.*
 
-suspend fun main() {                                // A function that can be suspended and resumed later
+// A function that can be suspended and resumed later
+suspend fun main() {
     val start = System.currentTimeMillis()
-    coroutineScope {                                // Create a scope for starting coroutines
+    // Create a scope for starting coroutines
+    coroutineScope {
         for (i in 1..100_000) {
-            launch {                                // Start concurrent tasks
-                delay(3000L - i * 30)              // Pause their execution
+            // Start concurrent tasks
+            launch {
+                // Pause their execution
+                delay(3000L - i * 30)
                 log(start, "Countdown: $i")
             }
         }
