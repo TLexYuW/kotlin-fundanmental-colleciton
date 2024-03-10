@@ -1,3 +1,10 @@
+const val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
+
+@Deprecated(SUBSYSTEM_DEPRECATED)
+fun foo() {
+    println("This function is deprecated.")
+}
+
 fun main(args: Array<String>) {
 
     println("Hello, World")
@@ -11,7 +18,7 @@ fun main(args: Array<String>) {
         }
     }else{
         println("No Argument Provided")
-
     }
 
+    foo()
 }
