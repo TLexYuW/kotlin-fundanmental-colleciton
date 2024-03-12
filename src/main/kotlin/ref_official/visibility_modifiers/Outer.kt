@@ -30,5 +30,9 @@ class Unrelated(outer: Outer) {
     // Outer.Nested is not visible, and Nested::e is not visible either
     init {
         outer.d
+        outer.c
     }
+
+    val someValD = outer.d
+    val someValC = outer.c
 }
