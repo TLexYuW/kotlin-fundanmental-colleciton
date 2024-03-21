@@ -21,6 +21,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.0")
 
 
+    testImplementation("org.assertj:assertj-core:3.25.3")
     testImplementation(kotlin("test"))
 }
 
